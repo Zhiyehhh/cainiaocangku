@@ -21,3 +21,16 @@
    > `git config --global user.email "邮箱"`
    > * 设置代理
    > `git config --global http.proxy http://127.0.0.1.7890`
+6. 一些疑问
+   > * 修改过的仓库内容如何重新push
+   >    ```
+   >    git add 文件名
+   >    git commit -m "说明"
+   >    git push
+   >    ```
+   >    1. 第一次`git remote add origin https://github.com/Zhiyehhh/cainiaocangku.git`
+   告诉Git这个本地仓库对应的远程仓库是origin,对应着那个地址
+   >    2. 第一次`git push -u origin main`
+   把 main 分支默认绑定到 origin 的 main 分支上
+   >    3. 查看当前仓库绑定的远程仓库
+   >    `git remote -v`
