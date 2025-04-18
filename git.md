@@ -15,3 +15,9 @@
    > * 推送到main分支：
    > `git push -u origin main`
    > * `git status` 可以查看改动
+5. 一些配置
+   > * 设置Git的用户名和邮箱，一般在`git init`后会用
+   > `git config --global user.name "昵称"`
+   > `git config --global user.email "邮箱"`
+   > * 设置代理
+   > `git config --global http.proxy http://127.0.0.1.7890`
